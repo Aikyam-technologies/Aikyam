@@ -1,49 +1,112 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aikyam Technologies - Innovating the Future">
     <title>Aikyam Technologies</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file (if needed) -->
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Basic CSS styling */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            margin-left: 80px;
+            margin-top: 0px;
+            margin-right: 80px;
+            margin-bottom: 0px;
         }
+
         header {
-            background-color: #008080;
-            color: white;
+            background-color: white;
+            color: #008080;
             padding: 10px 0;
             text-align: center;
         }
+
         nav {
             text-align: center;
             background-color: #008080;
             padding: 10px;
+            position: relative;
         }
+
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             display: inline-block;
         }
+
         nav a:hover {
             background-color: #575757;
         }
-       
+
+        /* Dropdown styles */
+        nav .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #575757;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        nav .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav .dropdown-content a:hover {
+            background-color: #333;
+        }
+
         footer {
             text-align: center;
             background-color: #008080;
             color: white;
             padding: 10px 0;
-            position: fixed;
             bottom: 0;
             width: 100%;
         }
+
+        /* Responsive Table Layout */
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            overflow: hidden; /* Prevents overflow */
+        }
+
+        /* Adjust the image to prevent overflow */
+        table td img {
+            width: 100%;      /* Ensure the image fills its container */
+            max-width: 371px; /* Limits the image width */
+            height: auto;     /* Maintain aspect ratio */
+            object-fit: cover; /* Ensures the image is not stretched */
+        }
+
+        table td {
+            padding: 10px;
+        }
+
+        /* Add space between image and paragraph */
+        table td:first-child {
+            padding-bottom: 20px;
+        }
+
+        table td:last-child p {
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -55,22 +118,35 @@
 
     <!-- Navigation Section -->
     <nav>
-        <a href="#home">Home</a>
+        <a href="index.html">Home</a>
         <a href="#about">About Us</a>
-        <a href="#services">Services</a>
+        <div class="dropdown">
+            <a href="#services">Services</a>
+            <div class="dropdown-content">
+                <a href="ProdDev.html">Product development</a>
+                <a href="ItConsulting.html">It Consulting</a>
+                <a href="CloudSol.html">Cloud Solutions</a>
+            </div>
+        </div>
         <a href="#contact">Contact</a>
     </nav>
 
     <!-- Main Content Section -->
-   
-    <tr>
-<td valign="top" width="371"><img height="250" src="home-team.jpg" width="371"></td>
-<td>
- <p>At Aikyam Technologies, we specialize in delivering innovative solutions that empower businesses to thrive. Our smart and technically strong team is dedicated to building exceptional applications and executing projects with precision, timeliness, and cost-effectiveness. Let&aposs build possibilities together!</p>
-<p class="regularText">&nbsp; </p></td></tr>
+    <table cellspacing="0" cellpadding="0" align="center" border="0">
+        <tbody>
+            <tr>
+                <td valign="top" width="371"><img src="home-team.jpg" alt="Team Image"></td>
+                <td>
+                    <p><strong><em>Aikyam Technologies</em> - With people and technology, we can meet your business challenges.</strong></p>
+                    <p>At <em>Aikyam Technologies</em>,we specialize in delivering innovative solutions that empower businesses to thrive. Our smart and technically strong team is dedicated to building exceptional applications and executing projects with precision, timeliness, and cost-effectiveness. Let@aposs build possibilities together!</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Aikyam Technologies. All Rights Reserved.</p>
+        <p>© 2024 Aikyam Technologies. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
