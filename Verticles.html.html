@@ -77,36 +77,32 @@
             width: 100%;
         }
 
-        /* Responsive Table Layout */
-        table {
-            width: 100%;
+        /* Industries We Serve Section */
+        .industries-section {
+            margin: 40px auto;
             max-width: 800px;
-            margin: 20px auto;
-            border-collapse: collapse;
-            overflow: hidden; /* Prevents overflow */
+            text-align: center;
         }
 
-        /* Adjust the image to prevent overflow */
-        table td img {
-            width: 100%;      /* Ensure the image fills its container */
-            max-width: 371px; /* Limits the image width */
-            height: auto;     /* Maintain aspect ratio */
-            object-fit: cover; /* Ensures the image is not stretched */
+        .industries-section h2 {
+            color: #008080;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
-        table td {
-            padding: 10px;
+        .industries-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 18px;
+            line-height: 2;
         }
 
-        /* Add space between image and paragraph */
-        table td:first-child {
-            padding-bottom: 20px;
+        .industries-list li::before {
+            content: '\2022'; /* Unicode for bullet point */
+            color: #008080;  /* Bullet color */
+            font-size: 24px;
+            margin-right: 10px;
         }
-
-        table td:last-child p {
-            margin-top: 20px;
-        }
-
     </style>
 </head>
 <body>
@@ -123,28 +119,30 @@
         <div class="dropdown">
             <a href="#services">Services</a>
             <div class="dropdown-content">
-                <a href="ProdDev.html">Product development</a>
-                <a href="ItConsulting.html">It Consulting</a>
+                <a href="ProdDev.html">Product Development</a>
+                <a href="ItConsulting.html">IT Consulting</a>
                 <a href="CloudSol.html">Cloud Solutions</a>
             </div>
         </div>
-	   <a href="Verticles.html">Verticles</a>
+        <a href="Verticles.html">Verticles</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Main Content Section -->
-    <table cellspacing="0" cellpadding="0" align="center" border="0">
-        <tbody>
-            <tr>
-                <td valign="top" width="371"><img src="home-team.jpg" alt="Team Image"></td>
-                <td>
-                    <p><strong><em>Aikyam Technologies</em> - With people and technology, we can meet your business challenges.</strong></p>
-                    <p>At <em>Aikyam Technologies</em>,we specialize in delivering innovative solutions that empower businesses to thrive. Our smart and technically strong team is dedicated to building exceptional applications and executing projects with precision, timeliness, and cost-effectiveness. Let@aposs build possibilities together!</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    
+    <!-- Industries We Serve Section -->
+    <section class="industries-section">
+        <h2>Industries We Serve</h2>
+        <ul class="industries-list">
+            <li>Travel</li>
+            <li>Financial Services</li>
+            <li>Healthcare</li>
+            <li>Retail & E-commerce</li>
+            <li>Education</li>
+            <li>Manufacturing</li>
+            <li>Telecommunications</li>
+            <li>Government & Public Sector</li>
+        </ul>
+    </section>
+
     <!-- Footer Section -->
     <footer>
         <p>© 2024 Aikyam Technologies. All Rights Reserved.</p>
