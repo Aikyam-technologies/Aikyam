@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aikyam Technologies - Innovating the Future">
+    <title>Aikyam Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic CSS styling */
+        body {
+            margin-left: 80px;
+            margin-top: 0px;
+            margin-right: 80px;
+            margin-bottom: 0px;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: white;
+            color: #008080;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #008080;
+            padding: 10px;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Dropdown styles */
+        nav .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #575757;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        nav .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav .dropdown-content a:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #008080;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+            clear: both; /* Prevent footer from overlapping content */
+        }
+
+        .content {
+            margin: 20px;
+        }
+
+        .heading {
+            font-size: 2rem;
+            color: #008080;
+            margin-top: 30px;
+            text-align: center; /* Center-align the heading */
+            font-weight: bold;
+        }
+
+        .section-content {
+            margin-top: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Aikyam Technologies</h1>
+        <p><i>Empowering Ideas, Building Possibilities.</i></p>
+    </header>
+
+    <!-- Navigation Section -->
+   <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About Us</a>
+        <div class="dropdown">
+            <a href="#services">Services</a>
+            <div class="dropdown-content">
+                <a href="ProdDev.html">Product development</a>
+                <a href="ItConsulting.html">IT Consulting</a>
+                <a href="CloudSol.html">Cloud Solutions</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <!-- Heading for IT Consulting Page -->
+        <h2 class="heading">IT Consulting: Driving Growth through Strategic Technology Insights</h2>
+
+        <!-- IT Consulting Content -->
+        <div class="section-content">
+            <p>Our IT consulting services provide strategic insights to optimize your technology stack, enhance your operations, and drive business growth through cutting-edge technologies like AI/ML, data engineering, DevOps, and more.</p>
+            
+            <h3>Services We Provide:</h3>
+            <ul>
+                <li><strong>Design & Architecture:</strong> We design scalable, secure, and reliable system architectures tailored to meet your business needs. Our experts ensure your systems are aligned with both current and future demands, leveraging the latest technologies to build adaptable solutions that grow with your business.</li>
+                <li><strong>AI/ML Engineering:</strong> We help you harness the power of artificial intelligence and machine learning to drive innovation and improve decision-making. Our AI/ML engineers build custom models for predictive analytics, automation, and intelligent decision support that enhance your products and operations. Whether it’s natural language processing, computer vision, or recommendation systems, we integrate AI/ML seamlessly into your business processes to unlock new opportunities.</li>
+                <li><strong>Data Engineering:</strong> We empower businesses to manage and leverage data through robust data pipelines, real-time data processing, and analytics solutions. Our data engineering expertise ensures that your data is accessible, clean, and actionable, enabling data-driven decisions that fuel growth.</li>
+                <li><strong>DevOps:</strong> We optimize your development and deployment workflows by implementing state-of-the-art DevOps practices that focus on automation, collaboration, and continuous improvement. Our approach enables rapid, reliable releases, enhances system stability, and accelerates your time-to-market while minimizing risk. By integrating development, operations, and infrastructure management, we ensure seamless coordination across your teams.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Aikyam Technologies. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
