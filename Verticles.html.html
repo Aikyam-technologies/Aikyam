@@ -77,33 +77,38 @@
             width: 100%;
         }
 
-        /* Industries We Serve Section */
-        .industries-section {
-            margin: 40px auto;
-            max-width: 800px;
-            text-align: center;
-        }
+/* Industries We Serve Section */
+.industries-section {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center; /* Center the heading */
+}
 
-        .industries-section h2 {
-            color: #008080;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+.industries-section h2 {
+    color: #008080;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
-        .industries-list {
-            list-style-type: none;
-            padding: 0;
-            font-size: 18px;
-            line-height: 2;
-        }
+.industries-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    font-size: 18px;
+    margin: 0 auto; /* Center the list block under the heading */
+    width: fit-content; /* Makes the list width adjust to its content */
+    text-align: left; /* Align the list items to the left */
+}
 
-        .industries-list li::before {
-            content: '\2022'; /* Unicode for bullet point */
-            color: #008080;  /* Bullet color */
-            font-size: 24px;
-            margin-right: 10px;
-        }
-    </style>
+.industries-list li {
+    margin: 0 15px; /* Space between items */
+}
+
+.industries-list li::before {
+    content: '\2022'; /* Unicode for bullet point */
+    color: #008080;  /* Bullet color */
+    font-size: 24px;
+    margin-right: 10px; /* Space between bullet and text */
+}    </style>
 </head>
 <body>
     <!-- Header Section -->
